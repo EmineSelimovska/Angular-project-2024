@@ -1,0 +1,77 @@
+
+#aa-menu-area {
+  left: 0;
+  padding-top: 20px;
+  position: absolute;
+  right: 0;
+  top: 35px;
+  width: 100%;
+  z-index: 99;
+}
+#aa-menu-area .main-navbar {
+  background-color: transparent;
+  border: medium none;
+  border-radius: 0;
+}
+#aa-menu-area .main-navbar .navbar-header .navbar-brand {
+  padding: 0;
+}
+#aa-menu-area .main-navbar .navbar-header .aa-logo {
+  border: 2px solid #fff;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  padding: 15px;
+  line-height: 13px;
+}
+#aa-menu-area .main-navbar .navbar-header .aa-logo-img {
+  border: none;
+  height: 50px;
+  width: 235px;
+}
+#aa-menu-area .main-navbar .navbar-header .aa-logo-img img {
+  width: 100%;
+  height: 100%;
+}
+#aa-menu-area .main-navbar .navbar-nav li a {
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-menu-area .main-navbar .navbar-nav .active a {
+  background-color: #FFF;
+}
+#aa-menu-area .main-navbar .navbar-nav .open a {
+  background-color: #fff;
+}
+#aa-menu-area .main-navbar .navbar-nav .dropdown-menu {
+  border: none;
+  border-radius: 0;
+  margin-top: 5px;
+}
+#aa-menu-area .main-navbar .navbar-nav .dropdown-menu li a {
+  color: #555;
+  padding: 8px 10px;
+}
+#aa-menu-area .main-navbar .navbar-right {
+  margin-right: -30px;
+}
+#aa-menu-area .navbar-fixed-top {
+  background-color: #FFF;
+  padding: 15px 0;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#aa-menu-area .navbar-fixed-top .navbar-header .aa-logo {
+  border: 2px solid #888;
+  color: #555;
+}
+#aa-menu-area .navbar-fixed-top .navbar-nav li a {
+  color: #555;
+}
