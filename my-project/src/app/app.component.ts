@@ -5,13 +5,14 @@ import { MenuAreaComponent } from './menu-area/menu-area.component';
 import { MenuComponent } from './menu/menu.component';
 import { PromoBannerComponent } from './promo-banner/promo-banner.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent,
     MenuAreaComponent, MenuComponent, PromoBannerComponent,
-  FooterComponent],
+  FooterComponent, AboutComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
