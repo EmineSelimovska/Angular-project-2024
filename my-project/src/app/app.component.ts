@@ -6,13 +6,14 @@ import { MenuComponent } from './menu/menu.component';
 import { PromoBannerComponent } from './promo-banner/promo-banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { ServiceComponent } from './service/service.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, HeaderComponent,
     MenuAreaComponent, MenuComponent, PromoBannerComponent,
-  FooterComponent, AboutComponent],
+  FooterComponent, AboutComponent,ServiceComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
