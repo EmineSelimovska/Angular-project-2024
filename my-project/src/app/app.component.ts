@@ -7,12 +7,11 @@ import { PromoBannerComponent } from './promo-banner/promo-banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
-import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink,CommonModule,HeaderComponent,
+  imports: [RouterOutlet, RouterLink,HeaderComponent,
     MenuAreaComponent, MenuComponent, PromoBannerComponent,
   FooterComponent, AboutComponent,ServiceComponent],
   templateUrl: './app.component.html',
