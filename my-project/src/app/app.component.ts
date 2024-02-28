@@ -12,8 +12,7 @@ import { ServiceComponent } from './service/service.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink,HeaderComponent,
-    MenuAreaComponent, MenuComponent, PromoBannerComponent,
-  FooterComponent, AboutComponent,ServiceComponent],
+  FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
