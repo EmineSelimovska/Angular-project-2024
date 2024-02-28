@@ -7,12 +7,14 @@ import { PromoBannerComponent } from './promo-banner/promo-banner.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
+import { PropertiesComponent } from './properties/properties.component';
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet, RouterLink,HeaderComponent,
-  FooterComponent],
+  FooterComponent,PropertiesComponent,ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
