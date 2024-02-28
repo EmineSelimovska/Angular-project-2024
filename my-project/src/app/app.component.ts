@@ -9,12 +9,14 @@ import { AboutComponent } from './about/about.component';
 import { ServiceComponent } from './service/service.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { ContactComponent } from './contact/contact.component';
+import { LoginComponent } from './login/login.component';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, RouterLink,HeaderComponent,
-  FooterComponent,PropertiesComponent,ContactComponent],
+  imports: [CommonModule,RouterOutlet, RouterLink,HeaderComponent,
+PropertiesComponent,ContactComponent,LoginComponent,FooterComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
