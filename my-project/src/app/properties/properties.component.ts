@@ -2,11 +2,12 @@ import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
 import { MenuAreaComponent } from '../menu-area/menu-area.component';
 import { MenuComponent } from '../menu/menu.component';
+import { FooterComponent } from '../footer/footer.component';
 
 @Component({
   selector: 'app-properties',
   standalone: true,
-  imports: [RouterLink,MenuAreaComponent,MenuComponent],
+  imports: [RouterLink,MenuAreaComponent,FooterComponent],
   templateUrl: './properties.component.html',
   styleUrl: './properties.component.css'
 })
