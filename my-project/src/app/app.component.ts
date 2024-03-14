@@ -1,12 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './header/header.component';
-import { MenuAreaComponent } from './menu-area/menu-area.component';
-import { MenuComponent } from './menu/menu.component';
-import { PromoBannerComponent } from './promo-banner/promo-banner.component';
-import { FooterComponent } from './footer/footer.component';
-import { AboutComponent } from './about/about.component';
-import { ServiceComponent } from './service/service.component';
+import { HeaderComponent } from './core/header/header.component';
+import { FooterComponent } from './core/footer/footer.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';

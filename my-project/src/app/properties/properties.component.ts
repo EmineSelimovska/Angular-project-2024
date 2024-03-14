@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterLink } from '@angular/router';
-import { MenuAreaComponent } from '../menu-area/menu-area.component';
-import { MenuComponent } from '../menu/menu.component';
-import { FooterComponent } from '../footer/footer.component';
+import { MenuAreaComponent } from '../core/menu-area/menu-area.component';
+import { MenuComponent } from '../core/menu/menu.component';
+import { FooterComponent } from '../core/footer/footer.component';
 
 @Component({
   selector: 'app-properties',
