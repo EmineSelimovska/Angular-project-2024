@@ -9,7 +9,7 @@ import property from './router/property';
 import user from './router/user';
 import order from './router/order';
 import { dbConnect } from './config/db.config';
-import path from 'path';
+// import path from 'path';
 import { sample_property } from './data';
 
 dbConnect();

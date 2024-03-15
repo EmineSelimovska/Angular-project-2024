@@ -70,7 +70,7 @@ export const sample_property: any[] = [
 
 export const sample_users: any[] = [
     {
-       
+       id: "5d89d85f-ea35-4d83-ac3a-d0814d213cfb",
         name: "Emily Smith",
         email: "emily@abv.bg",
         password: "12345",
@@ -78,7 +78,7 @@ export const sample_users: any[] = [
         isAdmin: true,
     },
     {
-       
+       id: "852064fa-9cb0-49f2-b94d-ac17daef02ab",
         name: "Mishel Simsan",
         email: "mishel@abv.bg",
         password: "12345",

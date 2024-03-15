@@ -1,7 +1,7 @@
 import { Schema, model } from "mongoose";
 
 export interface Property {
-    ownerId: string;
+   ownerId: string;
     property_type: string;
     city: string;
     price: number;
@@ -12,8 +12,8 @@ export interface Property {
     status: string;
     year_built: string;
     description: string;
-    _createdOn: string;
-    id: string;
+    _createdOn: Date;
+    id:string;
 
 }
 
@@ -30,7 +30,7 @@ export const PropertySchema = new Schema<Property>(
         status: { type: String, required: true },
         year_built: { type: String, required: true },
         description: { type: String, required: true },
-        _createdOn: { type: String, required: true }
+        _createdOn: { type: Date, default: Date.now}
 
     }, {
     toJSON: {

@@ -8,7 +8,7 @@ const router = Router();
 router.get("/seed", asyncHandler(
  async (req, res) => {
      const propertyCount = await PropertyModel.countDocuments();
-     if(propertyCount> 0){
+     if(propertyCount > 0){
         res.send('Seed is already done!');
         return;
      }
@@ -27,8 +27,8 @@ router.get("/",asyncHandler(
 router.get("/search/:searchName", asyncHandler(
     async (req, res) => {
         const searchRegex = new RegExp(req.params.searchName, 'i');
-       const foods = await PropertyModel.find({name: {$regex:searchRegex}});
-        res.send(foods);
+       const properties = await PropertyModel.find({name: {$regex:searchRegex}});
+        res.send(properties);
     }
 ));
 

@@ -6,11 +6,12 @@ import { FooterComponent } from '../core/footer/footer.component';
 import { Property } from '../shared/models/Property';
 import { PropertyService } from '../services/property.service';
 import { Observable } from 'rxjs';
+import { ProperyListItemComponent } from '../propery-list-item/propery-list-item.component';
 
 @Component({
   selector: 'app-properties',
   standalone: true,
-  imports: [RouterLink,MenuAreaComponent,FooterComponent],
+  imports: [RouterLink,MenuAreaComponent,ProperyListItemComponent,FooterComponent],
   templateUrl: './properties.component.html',
   styleUrl: './properties.component.css'
 })
