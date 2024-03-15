@@ -11,7 +11,7 @@ import { FooterComponent } from '../footer/footer.component';
   selector: 'app-header',
   standalone: true,
   imports: [RouterLink,MenuAreaComponent,MenuComponent,AboutComponent,
-  ServiceComponent,PromoBannerComponent],
+  ServiceComponent,PromoBannerComponent,FooterComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })

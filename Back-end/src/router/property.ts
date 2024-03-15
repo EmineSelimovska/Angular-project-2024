@@ -15,8 +15,7 @@ router.get("/seed", asyncHandler(
      await PropertyModel.create(sample_property);
      res.send('Seed is done!');
     }
-))
-
+));
 
 router.get("/",asyncHandler(
     async (req,res) =>{
@@ -73,7 +72,7 @@ router.get("/tag/:tagName",asyncHandler(
 
 router.get("/:propertyId", asyncHandler(
     async (req, res) => {
-        const food = await PropertyModel.findById(req.params.foodId);
+        const food = await PropertyModel.findById(req.params.propertyId);
          res.send(food);
        }
 ));

@@ -25,9 +25,7 @@ app.use(cors({
 }));
 
 
-app.use("/api/property",(req: any, res: any) => {
-    res.send(sample_property)
-});
+app.use("/api/property", property);
 app.use("/api/users", user);
 app.use("/api/orders", order);
 

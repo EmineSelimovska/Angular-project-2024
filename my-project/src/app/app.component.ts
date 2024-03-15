@@ -5,16 +5,22 @@ import { FooterComponent } from './core/footer/footer.component';
 import { PropertiesComponent } from './properties/properties.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
-import { BrowserPlatformLocation, CommonModule } from '@angular/common';
-import { ɵBrowserAnimationBuilder } from '@angular/animations';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, RouterLink,
+  imports: [CommonModule,
+    RouterOutlet,
+    RouterLink,
     HeaderComponent,
-    PropertiesComponent, ContactComponent, LoginComponent, FooterComponent, PropertiesComponent],
+    PropertiesComponent,
+    ContactComponent,
+    LoginComponent,
+    FooterComponent,
+    PropertiesComponent
+  ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
