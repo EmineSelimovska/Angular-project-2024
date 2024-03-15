@@ -1,5 +1,5 @@
 export class Property {
-    ownerId!: string;
+   id!: string;
     property_type!: string;
     city!: string;
     price!: number;
@@ -10,7 +10,6 @@ export class Property {
     status!: string;
     year_built!: string;
     description!: string;
-    _createdOn!: Date;
-    id!: string;
+   
 
 }

@@ -3,6 +3,7 @@ import { sample_service, sample_property } from "../data";
 import asyncHandler from 'express-async-handler';
 import {PropertyModel } from "../models/Property";
 
+
 const router = Router();
 
 router.get("/seed", asyncHandler(

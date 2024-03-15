@@ -4,7 +4,7 @@
       
           <article class="aa-properties-item" >
             <div class="aa-properties-item-img" >
-              <img alt="img" src='{{property.imgProperty}}'/>
+              <img alt="img" src={{property.imgProperty}}/>
             </div>
   
             <div class="aa-tag ">
@@ -19,11 +19,11 @@
               </div>
               <div class="aa-properties-about">
                 <h3><a routerLink='/properties/propertyId'></a></h3>
-                <p></p>
+                <p>{{property.description}}</p>
               </div>
               <div class="aa-properties-detial">
                 <span class="aa-price">
-                
+                {{property.price}}
                 </span>
                 <a class="aa-secondary-btn" routerLink='/properties/propertyId'>View Details</a>
               </div>

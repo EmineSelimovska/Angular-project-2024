@@ -1,7 +1,8 @@
-import { Schema, model } from "mongoose";
+import { ObjectId } from "bson";
+import mongoose, { Schema, model } from "mongoose";
 
 export interface Property {
-   ownerId: string;
+   id: mongoose.Types.ObjectId;
     property_type: string;
     city: string;
     price: number;
@@ -12,8 +13,7 @@ export interface Property {
     status: string;
     year_built: string;
     description: string;
-    _createdOn: Date;
-    id:string;
+    
 
 }
 
@@ -30,7 +30,6 @@ export const PropertySchema = new Schema<Property>(
         status: { type: String, required: true },
         year_built: { type: String, required: true },
         description: { type: String, required: true },
-        _createdOn: { type: Date, default: Date.now}
 
     }, {
     toJSON: {

@@ -37,7 +37,7 @@ export const sample_service: any[] = [
 
 export const sample_property: any[] = [
     {
-        ownerId: "5d89d85f-ea35-4d83-ac3a-d0814d213cfb",
+        
         property_type: "House",
         city: "Plovdiv ",
         price: "90000",
@@ -48,11 +48,10 @@ export const sample_property: any[] = [
         status: "For Sale",
         year_built: "2015",
         description: "Spacious family house with a beautiful garden and garage...",
-        _createdOn: 1701376455254,
-        id: "dd0991cd-75f8-4d28-83a4-771353bcde88"
+       
     },
     {
-        ownerId: "852064fa-9cb0-49f2-b94d-ac17daef02ab",
+        
         property_type: "Apartment",
         city: "Plovdiv ",
         price: "30000",
@@ -63,26 +62,7 @@ export const sample_property: any[] = [
         status: "For Sale",
         year_built: "2010",
         description: "Very confortable!",
-        _createdOn: 1701376681996,
-        id: "8cf66023-67cd-426b-a34b-439950fc05a4"
+      
     }
 ]
 
-export const sample_users: any[] = [
-    {
-       id: "5d89d85f-ea35-4d83-ac3a-d0814d213cfb",
-        name: "Emily Smith",
-        email: "emily@abv.bg",
-        password: "12345",
-        address: "Bulgaria" ,
-        isAdmin: true,
-    },
-    {
-       id: "852064fa-9cb0-49f2-b94d-ac17daef02ab",
-        name: "Mishel Simsan",
-        email: "mishel@abv.bg",
-        password: "12345",
-        address: "Romania" ,
-        isAdmin: false,
-    }
-]
