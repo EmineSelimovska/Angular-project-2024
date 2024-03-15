@@ -12,7 +12,7 @@ export interface Property {
     status: string;
     year_built: string;
     description: string;
-    _createdOn: number;
+    _createdOn: string;
     id: string;
 
 }
@@ -30,7 +30,7 @@ export const PropertySchema = new Schema<Property>(
         status: { type: String, required: true },
         year_built: { type: String, required: true },
         description: { type: String, required: true },
-        _createdOn: { type: Number, required: true }
+        _createdOn: { type: String, required: true }
 
     }, {
     toJSON: {
@@ -44,4 +44,4 @@ export const PropertySchema = new Schema<Property>(
 
 )
 
-export const PropertyModel = model<Property>('food', PropertySchema);
+export const PropertyModel = model<Property>('property', PropertySchema);

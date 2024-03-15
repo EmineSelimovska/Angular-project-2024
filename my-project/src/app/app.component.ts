@@ -6,6 +6,7 @@ import { PropertiesComponent } from './properties/properties.component';
 import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @Component({
@@ -19,7 +20,8 @@ import { CommonModule } from '@angular/common';
     ContactComponent,
     LoginComponent,
     FooterComponent,
-    PropertiesComponent
+    PropertiesComponent,
+    HttpClientModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
