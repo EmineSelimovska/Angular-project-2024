@@ -49,7 +49,6 @@ export const sample_property: any[] = [
         year_built: "2015",
         description: "Spacious family house with a beautiful garden and garage...",
        
-       
     },
     {
         

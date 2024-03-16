@@ -1,5 +1,6 @@
 import { ObjectId } from "bson";
-import mongoose, { Schema, model } from "mongoose";
+import mongoose, { Model, Schema, model } from "mongoose";
+import { User, UserModel, UserSchema } from "./User";
 
 export interface Property {
    id: mongoose.Types.ObjectId;
@@ -13,7 +14,6 @@ export interface Property {
     status: string;
     year_built: string;
     description: string;
-    
 
 }
 

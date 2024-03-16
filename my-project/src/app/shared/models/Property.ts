@@ -10,6 +10,5 @@ export class Property {
     status!: string;
     year_built!: string;
     description!: string;
-   
 
 }
