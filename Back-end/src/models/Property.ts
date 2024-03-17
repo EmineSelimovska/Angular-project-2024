@@ -1,6 +1,7 @@
 import { ObjectId } from "bson";
 import mongoose, { Model, Schema, model } from "mongoose";
 import { User, UserModel, UserSchema } from "./User";
+import { sample_users } from "../data";
 
 export interface Property {
    id: mongoose.Types.ObjectId;
@@ -14,6 +15,7 @@ export interface Property {
     status: string;
     year_built: string;
     description: string;
+    userId: User;
 
 }
 
@@ -30,7 +32,11 @@ export const PropertySchema = new Schema<Property>(
         status: { type: String, required: true },
         year_built: { type: String, required: true },
         description: { type: String, required: true },
-
+        userId: 
+            [{type: mongoose.Types.ObjectId, 
+            ref: 'User'}]
+        
+        
     }, {
     toJSON: {
         virtuals: true

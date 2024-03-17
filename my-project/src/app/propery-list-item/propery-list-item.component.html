@@ -1,10 +1,10 @@
 <ul class="aa-properties-nav"  >
    
-        <li *ngFor="let item from property" class="aa-properties-item">
+        <li class="aa-properties-item">
       
           <article class="aa-properties-item" >
             <div class="aa-properties-item-img" >
-              <img alt="img" [src]='item.imgProperty'/>
+              <img alt="img" src="imgProperty"/>
             </div>
   
             <div class="aa-tag ">
@@ -13,19 +13,19 @@
   
             <div class="aa-properties-item-content" >
               <div  class="aa-properties-info">
-                <span>{{item.bedrooms}} Beds</span>
-                <span>{{item.bathrooms}} Baths</span>
-                <span>{{item.square_meters}} SQ FT</span>
+                <span> -- Beds</span>
+                <span>-- Baths</span>
+                <span>--  SQ FT</span>
               </div>
               <div class="aa-properties-about">
-                <h3><a routerLink='/properties/{{item.id}}'></a></h3>
-                <p>{{item.description}}</p>
+                <h3><a routerLink='/properties/id'></a></h3>
+                <p></p>
               </div>
               <div class="aa-properties-detial">
                 <span class="aa-price">
-                {{item.price}}
+                ---
                 </span>
-                <a class="aa-secondary-btn" routerLink='/properties/{{item.id}}'>View Details</a>
+                <a class="aa-secondary-btn" routerLink='/properties/id'>View Details</a>
               </div>
             </div>
           </article>

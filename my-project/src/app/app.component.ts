@@ -7,6 +7,7 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { ProperyListItemComponent } from './propery-list-item/propery-list-item.component';
 
 
 @Component({
@@ -17,10 +18,10 @@ import { HttpClientModule } from '@angular/common/http';
     RouterLink,
     HeaderComponent,
     PropertiesComponent,
+    ProperyListItemComponent,
     ContactComponent,
     LoginComponent,
     FooterComponent,
-    PropertiesComponent,
     HttpClientModule
   ],
   templateUrl: './app.component.html',

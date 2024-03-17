@@ -21,7 +21,7 @@ export class PropertiesComponent implements OnInit{
   constructor(private properyService: PropertyService, activeRouter: ActivatedRoute){
     let propertyObservable: Observable<Property[]>;
 
-    propertyObservable = properyService.getAll();
+    propertyObservable = properyService.getProperty();
 
     propertyObservable.subscribe((serverProperty) => {
       this.properties = serverProperty
