@@ -87,7 +87,7 @@ const generateToken = (user: User) => {
 
  
 return {
-id: user.id,
+id: user._id,
   email: user.email,
   name: user.name,
   address: user.address,

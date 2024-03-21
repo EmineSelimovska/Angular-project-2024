@@ -4,7 +4,7 @@ import { User, UserModel, UserSchema } from "./User";
 import { sample_users } from "../data";
 
 export interface Property {
-   id: mongoose.Types.ObjectId;
+   _id: mongoose.Types.ObjectId;
     property_type: string;
     city: string;
     price: number;

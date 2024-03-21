@@ -1,0 +1,16 @@
+[
+    {
+        "name": "Emily Smith",
+        "email": "emily@abv.bg",
+        "password": "12345",
+        "address": "Bulgaria",
+        "isAdmin": true
+    },
+    {
+        "name": "Mishel Simsan",
+        "email": "mishel@abv.bg",
+        "password": "12345",
+        "address": "Romania",
+        "isAdmin": false
+    }
+]

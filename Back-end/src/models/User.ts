@@ -5,8 +5,9 @@ import { Property, PropertySchema } from "./Property";
 const { ObjectId } = mongoose.Schema.Types;
 
 export interface User {
+    id: any;
 
-    id: mongoose.Types.ObjectId;
+    _id: mongoose.Types.ObjectId;
     email: string;
     password: string;
     name: string;
