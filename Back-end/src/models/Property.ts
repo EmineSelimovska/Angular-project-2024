@@ -33,8 +33,9 @@ export const PropertySchema = new Schema<Property>(
         year_built: { type: String, required: true },
         description: { type: String, required: true },
         userId: 
-            [{type: mongoose.Types.ObjectId, 
-            ref: 'User'}]
+            [{type: Schema.Types.ObjectId, 
+            ref: 'User',
+        required: true  }]
         
         
     }, {

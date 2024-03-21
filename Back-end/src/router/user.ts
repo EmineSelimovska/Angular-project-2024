@@ -8,6 +8,9 @@ import bcrypt from 'bcryptjs';
 import { Types } from "mongoose";
 import { ObjectId } from "bson";
 import mongoose from "mongoose";
+import property from "./property";
+import { PropertyModel } from "../models/Property";
+
 
 
 
@@ -42,7 +45,7 @@ router.post("/login", asyncHandler(
 
 router.post("/register", asyncHandler(
   async (req, res) => {
-    const {name, email, password, address} = req.body;
+    const {name, email, password, address,property} = req.body;
     const user = await UserModel.findOne({email});
     if(user){
       res.status(400).send('User is already exist, please login!');
@@ -52,14 +55,13 @@ router.post("/register", asyncHandler(
     const hashPassword = await bcrypt.hash(password, 10);
  
   
-    const newUser:User = {
-     id: new mongoose.Types.ObjectId,
+    const newUser= {
+      id: new mongoose.Types.ObjectId,
       name,
       email: email.toLowerCase(),
       password: hashPassword,
       address,
-      isAdmin: false,
-     
+      isAdmin: false
     }
 
     const dbUser = await UserModel.create(newUser);

@@ -48,7 +48,13 @@ export const sample_property: any[] = [
         status: "For Sale",
         year_built: "2015",
         description: "Spacious family house with a beautiful garden and garage...",
-       
+        userId: {
+            name: "Emily Smith",
+            email: "emily@abv.bg",
+            password: "12345",
+            address: "Bulgaria" ,
+            isAdmin: true,
+        }
     },
     {
         
@@ -62,7 +68,13 @@ export const sample_property: any[] = [
         status: "For Sale",
         year_built: "2010",
         description: "Very confortable!",
-      
+        userId: {
+            name: "Mishel Simsan",
+            email: "mishel@abv.bg",
+            password: "12345",
+            address: "Romania" ,
+            isAdmin: false,
+        }
     }
 ]
 

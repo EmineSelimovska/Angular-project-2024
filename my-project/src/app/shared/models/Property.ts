@@ -1,15 +1,9 @@
-export class UserId {
-    _id!: string;
-    email!: string;
-    password!: string;
-    name!: string;
-    address!: string;
-    isAdmin!: boolean;
-}
+import { UserId } from "./user";
+
 
 
 export class Property {
-   id!: string;
+   _id!: string;
     property_type!: string;
     city!: string;
     price!: number;
