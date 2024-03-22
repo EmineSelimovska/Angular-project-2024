@@ -1,18 +1,17 @@
-
+export const sample_about: any[] = [
+    { 
+        welcome: "Welcome to Msell Real Estate, your trusted partner in the world of real estate in Plovdiv, Bulgaria. With a strong presence in the local real estate market, we have built a reputation for excellence and reliability.",
+        mission: "Our mission is to provide exceptional real estate services to our clients, exceeding their expectations at every step. We aim to simplify the complex world of real estate, offering personalized solutions, and ensuring a smooth and stress-free experience for buyers, sellers, investors, and tenants.",
+        setsUpApart: "What Sets Us Apart:",
+        name1: "Local Expertise: We have an in-depth knowledge of the Plovdiv real estate market, allowing us to offer expert advice and guidance.",
+        name2: "Client-Centric Approach: Your goals are our top priority. We take the time to understand your unique needs and work tirelessly to achieve your objectives.",
+        name3: "Integrity and Trust: We believe in transparency and honesty. You can trust us to provide accurate information, fair deals, and unwavering support.",
+        name4: "Innovation: We leverage the latest technology and market insights to provide innovative solutions and marketing strategies.",
+        name5: "Community Involvement: We are proud to be a part of the Plovdiv community and actively contribute to its growth and development."
+    }
+]
 
 export const sample_service: any[] = [
-    
-         {
-            
-            welcome: "Welcome to Msell Real Estate, your trusted partner in the world of real estate in Plovdiv, Bulgaria. With a strong presence in the local real estate market, we have built a reputation for excellence and reliability.",
-            mission: "Our mission is to provide exceptional real estate services to our clients, exceeding their expectations at every step. We aim to simplify the complex world of real estate, offering personalized solutions, and ensuring a smooth and stress-free experience for buyers, sellers, investors, and tenants.",
-            setsUpApart: "What Sets Us Apart:",
-            name1: "Local Expertise: We have an in-depth knowledge of the Plovdiv real estate market, allowing us to offer expert advice and guidance.",
-            name2: "Client-Centric Approach: Your goals are our top priority. We take the time to understand your unique needs and work tirelessly to achieve your objectives.",
-            name3: "Integrity and Trust: We believe in transparency and honesty. You can trust us to provide accurate information, fair deals, and unwavering support.",
-            name4: "Innovation: We leverage the latest technology and market insights to provide innovative solutions and marketing strategies.",
-            name5: "Community Involvement: We are proud to be a part of the Plovdiv community and actively contribute to its growth and development."
-        },
         {
             
             n1: "Residential Sales and Rentals",
