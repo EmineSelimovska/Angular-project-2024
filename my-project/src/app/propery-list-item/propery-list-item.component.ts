@@ -8,17 +8,17 @@ import { PropertyService } from '../services/property.service';
   selector: 'app-propery-list-item',
   standalone: true,
   imports: [CommonModule, RouterLink],
-  templateUrl: './propery-list-item.component.html',
+  templateUrl:'./propery-list-item.component.html',
   styleUrl: './propery-list-item.component.css'
 })
 export class ProperyListItemComponent implements OnInit{
-  
+  properties: Property[] = [];
 
   constructor(private propertyService: PropertyService){}
    
   ngOnInit(): void {
       this.propertyService.getProperty().subscribe(properties =>{
-        console.log(properties);
+       this.properties = properties;
         
       })
     }

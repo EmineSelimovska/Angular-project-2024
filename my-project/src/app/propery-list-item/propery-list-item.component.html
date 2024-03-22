@@ -2,28 +2,28 @@
    
         <li class="aa-properties-item">
       
-          <article class="aa-properties-item" >
+          <article *ngFor="let property of properties" class="aa-properties-item" >
             <div class="aa-properties-item-img" >
-              <img alt="img" src="imgProperty"/>
+              <img alt="img" [src]="property.imgProperty"/>
             </div>
   
             <div class="aa-tag ">
-              
+              {{property.status}}
             </div>
   
-            <div class="aa-properties-item-content" >
+            <div  class="aa-properties-item-content" >
               <div  class="aa-properties-info">
-                <span> -- Beds</span>
-                <span>-- Baths</span>
-                <span>--  SQ FT</span>
+                <span> {{property.bedrooms}} Beds</span>
+                <span>{{property.bathrooms}} Baths</span>
+                <span>{{property.square_meters}}  SQ FT</span>
               </div>
               <div class="aa-properties-about">
                 <h3><a routerLink='/properties/id'></a></h3>
-                <p></p>
+                <p>{{property.description}}</p>
               </div>
               <div class="aa-properties-detial">
                 <span class="aa-price">
-                ---
+                {{property.price}}
                 </span>
                 <a class="aa-secondary-btn" routerLink='/properties/id'>View Details</a>
               </div>
