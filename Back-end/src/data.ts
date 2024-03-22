@@ -1,5 +1,6 @@
 export const sample_about: any[] = [
-    { 
+    {
+            
         welcome: "Welcome to Msell Real Estate, your trusted partner in the world of real estate in Plovdiv, Bulgaria. With a strong presence in the local real estate market, we have built a reputation for excellence and reliability.",
         mission: "Our mission is to provide exceptional real estate services to our clients, exceeding their expectations at every step. We aim to simplify the complex world of real estate, offering personalized solutions, and ensuring a smooth and stress-free experience for buyers, sellers, investors, and tenants.",
         setsUpApart: "What Sets Us Apart:",

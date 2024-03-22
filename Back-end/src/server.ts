@@ -9,9 +9,9 @@ import property from './router/property';
 import user from './router/user';
 import order from './router/order';
 import about from './router/about';
+import service from './router/service';
 import { dbConnect } from './config/db.config';
 // import path from 'path';
-import { sample_property } from './data';
 
 dbConnect();
 
@@ -29,7 +29,9 @@ app.use(cors({
 app.use("/api/property", property);
 app.use("/api/users", user);
 app.use("/api/orders", order);
-app.use('/api/abouts', about)
+app.use('/api/abouts', about);
+app.use('/api/services', service);
+
 
 app.use(function(req: any, res: { header: (arg0: string, arg1: string) => void; }, next: () => void) {
 
