@@ -8,6 +8,8 @@ import { LoginComponent } from './login/login.component';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { ProperyListItemComponent } from './propery-list-item/propery-list-item.component';
+import { CreateComponent } from './create/create.component';
+import { RegisterComponent } from './register/register.component';
 
 
 @Component({
@@ -19,8 +21,10 @@ import { ProperyListItemComponent } from './propery-list-item/propery-list-item.
     HeaderComponent,
     PropertiesComponent,
     ProperyListItemComponent,
+    CreateComponent,
     ContactComponent,
     LoginComponent,
+    RegisterComponent,
     FooterComponent,
     HttpClientModule
   ],

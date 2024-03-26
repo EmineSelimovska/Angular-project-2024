@@ -1,0 +1,158 @@
+#create{
+    background-image: url("https://static.zawya.com/view/acePublic/alias/contentid/NGFjZWU4OTgtZjM1Yi00/37/1298181272.webp");
+    background-position: center center;
+    background-size: cover;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow-y: auto;
+    width: 100%;
+
+}
+
+#create:before {
+    background-color: rgba(0, 0, 0, 0.8);
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  #create .createArea {
+    display: inline;
+    float: center;
+    padding: 20% 20%;
+    width: 120%;
+  }
+
+  #create .createArea .createForm {
+    background-color: rgba(255, 255, 255, 0.6);
+    display: inline;
+    padding: 50px;
+    float: left;
+    width: 150%;
+  }
+
+  #create .createArea .createForm .formTitle {
+    display: inline;
+    float: left;
+    text-align: center;
+    width: 100%;
+  }
+
+  
+#create .createArea .createForm .formTitle .createHome {
+    color: #0a0909;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  #create .createArea .createForm .formTitle h4 {
+    color: #000;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+  }
+
+  #create .createArea .createForm .propertyTypeField {
+    display: inline;
+    float: left;
+    width: 100%;
+   
+    margin-bottom: 3px;
+  }
+
+  #create .createArea .createForm .propertyTypeField label,
+  #create .createArea .createForm .cityField label,
+  #create .createArea .createForm .priceField label,
+  #create .createArea .createForm .bedroomsField label,
+  #create .createArea .createForm .bathroomsField label,
+  #create .createArea .createForm .squareMetersField label,
+  #create .createArea .createForm .propertyImageField label,
+  #create .createArea .createForm .statusField label,
+  #create .createArea .createForm .yearBuiltField label,
+  #create .createArea .createForm .descriptionField label{
+    color: #000;
+    display: inline-block;
+    text-align: left;
+    width: 100%;
+  
+  }
+
+  #create .createArea .createForm .propertyTypeField input[type="property_type"],
+#create .createArea .createForm .cityField input[type="city"],
+#create .createArea .createForm .priceField input[type="price"],
+#create .createArea .createForm .bedroomsField input[type="bedrooms"],
+#create .createArea .createForm .bathroomsField input[type="bathrooms"],
+#create .createArea .createForm .squareMetersField input[type="square_meters"], 
+#create .createArea .createForm .propertyImageField input[type="text"],
+#create .createArea .createForm .statusField input[type="status"],
+#create .createArea .createForm .yearBuiltField input[type="year_built"]
+ {
+  border: none;
+  color: #555;
+  margin-bottom: 10px;
+  height: 35px;
+  padding: 5px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#create .createArea .createForm .descriptionField textarea[type="description"]{
+  border: none;
+  color: #555;
+  margin-bottom: 10px;
+  height: 75px;
+  padding: 5px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#create .createArea .createForm .createSubmit {
+  display: inline;
+  float: left;
+  text-align: center;
+  width: 100%;
+}
+
+#create .createArea .createForm .createSubmit input[type="submit"]{
+  color: #0e0d0d;
+  font-size: 16px;
+  font-weight: bold;
+  height: 50px;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  width: 150px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+ 
+#create .createArea .createForm .createSubmit input[type="submit"]:hover{
+  background-color: rgb(95, 156, 235);
+}
+.container{
+    display: flex;
+    justify-content: center;
+     align-items: center;
+     margin: 5em;
+}
