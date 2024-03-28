@@ -5,12 +5,18 @@ import { ContactComponent } from './contact/contact.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { CreateComponent } from './create/create.component';
+import { EditComponent } from './edit/edit.component';
+import { PropertyDetailsComponent } from './property-details/property-details.component';
 
 export const routes: Routes = [
     {path: 'header', component: HeaderComponent},
-    {path: 'properties', component: PropertiesComponent},
+    {path: 'properties', component: PropertiesComponent,
+    children:[
+       { path: ':id', component:PropertyDetailsComponent}
+    ]},
     {path: '', component: HeaderComponent },
     {path: 'create', component: CreateComponent},
+    {path: 'edit', component: EditComponent},
     {path: 'contact', component: ContactComponent},
      {path: 'login', component: LoginComponent},
      {path: 'register', component: RegisterComponent}

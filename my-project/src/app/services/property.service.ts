@@ -17,6 +17,11 @@ export class PropertyService {
       return this.httpClient.get<Property[]>(`${appUrl}/property`);
     }
 
+    getById(id: string): Observable<Property[]>{
+      const {appUrl} = environment;
+      return this.httpClient.get<Property[]>(`${appUrl}/property/` + id);
+    }
+
 
   
 }
