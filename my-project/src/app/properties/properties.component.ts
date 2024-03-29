@@ -8,11 +8,12 @@ import { PropertyService } from '../services/property.service';
 import { Observable } from 'rxjs';
 import { ProperyListItemComponent } from '../propery-list-item/propery-list-item.component';
 import { PropertyDetailsComponent } from '../property-details/property-details.component';
+import { FirstHeaderComponent } from '../first-header/first-header.component';
 
 @Component({
   selector: 'app-properties',
   standalone: true,
-  imports: [RouterLink,MenuAreaComponent,ProperyListItemComponent,PropertyDetailsComponent,
+  imports: [RouterLink,FirstHeaderComponent,MenuAreaComponent,ProperyListItemComponent,PropertyDetailsComponent,
     FooterComponent],
   templateUrl: './properties.component.html',
   styleUrl: './properties.component.css'
