@@ -7,13 +7,14 @@ import { RegisterComponent } from './register/register.component';
 import { CreateComponent } from './create/create.component';
 import { EditComponent } from './edit/edit.component';
 import { PropertyDetailsComponent } from './property-details/property-details.component';
-
+import { AuthGuardService } from './services/auth-guard.service';
 export const routes: Routes = [
     {path: 'header', component: HeaderComponent},
     {path: 'properties', component: PropertiesComponent,pathMatch: 'full'},
     {path: 'properties/:id', component: PropertyDetailsComponent},
     {path: '', component: HeaderComponent },
-    {path: 'create', component: CreateComponent},
+    {path: 'create', component: CreateComponent,
+   canActivate: [AuthGuardService]},
    //  {path: 'edit', component: EditComponent},
     {path: 'contact', component: ContactComponent},
      {path: 'login', component: LoginComponent},

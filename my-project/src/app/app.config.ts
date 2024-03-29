@@ -3,6 +3,7 @@ import { provideRouter } from '@angular/router';
 
 import { routes } from './app.routes';
 import { provideHttpClient } from '@angular/common/http';
+import { AuthGuardService } from './services/auth-guard.service';
 
 
 export const appConfig: ApplicationConfig = {

@@ -4,6 +4,7 @@ export class UserId {
     password!: string;
     name!: string;
     address!: string;
+    token!: string;
     isAdmin!: boolean;
     property!: string[]
 }

@@ -17,13 +17,13 @@
                 </div>
               </div>
               <div class="col-md-6 col-sm-6 col-xs-6">
-                <div class="aa-header-right">
-                      <a routerLink="/register" class="aa-register">Register</a>
-                      <a routerLink="/login"class="aa-login">Login</a>
+                <div class="aa-header-right" >
+                      <a *ngIf="!isAuth" routerLink="/register" class="aa-register">Register</a>
+                      <a *ngIf="!isAuth" routerLink="/login"class="aa-login">Login</a>
                   
-                      <span ></span>
+                      <span *ngIf="isAuth" >{{user.name}}</span>
 
-                      <a routerLink="/logout"  class="aa-logout">Logout</a>
+                      <a *ngIf="isAuth" routerLink="/logout"  class="aa-logout">Logout</a>
                  
                 
 
