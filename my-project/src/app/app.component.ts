@@ -13,6 +13,7 @@ import { RegisterComponent } from './register/register.component';
 import { PropertyDetailsComponent } from './property-details/property-details.component';
 import { PromoBannerComponent } from './core/promo-banner/promo-banner.component';
 import { FirstHeaderComponent } from './first-header/first-header.component';
+import { ToastModule } from '@coreui/angular';
 
 
 @Component({
@@ -31,7 +32,8 @@ import { FirstHeaderComponent } from './first-header/first-header.component';
     LoginComponent,
     RegisterComponent,
     FooterComponent,
-    HttpClientModule
+    HttpClientModule,
+    ToastModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
