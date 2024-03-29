@@ -10,6 +10,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { ProperyListItemComponent } from './propery-list-item/propery-list-item.component';
 import { CreateComponent } from './create/create.component';
 import { RegisterComponent } from './register/register.component';
+import { PropertyDetailsComponent } from './property-details/property-details.component';
+import { PromoBannerComponent } from './core/promo-banner/promo-banner.component';
+import { FirstHeaderComponent } from './first-header/first-header.component';
 
 
 @Component({
@@ -18,8 +21,10 @@ import { RegisterComponent } from './register/register.component';
   imports: [CommonModule,
     RouterOutlet,
     RouterLink,
+    FirstHeaderComponent,
     HeaderComponent,
     PropertiesComponent,
+    PropertyDetailsComponent,
     ProperyListItemComponent,
     CreateComponent,
     ContactComponent,

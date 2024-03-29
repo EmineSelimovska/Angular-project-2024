@@ -1,6 +1,6 @@
-
-<div>
-<section id="aa-property-header"  *ngFor="let property of property">
+<app-first-header></app-first-header>
+<app-menu-area></app-menu-area>
+<section id="aa-property-header">
     <div class="container">
         <div class="row">
             <div class="col-md-12">
@@ -8,7 +8,7 @@
                     <h2>Properties Details</h2>
                     <ol class="breadcrumb">
                         <li><a routerLink="/properties">Properties</a></li>
-                        <li class="active">{{property.property_type}}</li>
+                        <li class="active">{{properties.property_type}}</li>
                     </ol>
                 </div>
             </div>
@@ -16,7 +16,7 @@
     </div>
 </section>
 
-<section id="aa-properties" *ngFor="let property of property">
+<section id="aa-properties" >
     <div class="container">
         <div class="row">
             <div class="col-md-8">
@@ -24,17 +24,17 @@
                    
                     <div   class="aa-properties-details">
                         <div class="aa-properties-details-img">
-                            <img [src]="property.imgProperty" />
+                            <img [src]="properties.imgProperty" />
                         </div>
                         <div class="aa-properties-info">
-                            <h2>{{property.property_type}}</h2>
-                            <span class="aa-price">${{property.price}}</span>
-                            <p>City: {{property.city}}</p>
-                            <p>Bedrooms: {{property.bedrooms}}</p>
-                            <p>Bathrooms:{{property.bathrooms}}</p>
-                            <p>Square Meters: {{property.square_meters}}</p>
-                            <p>Year Built: {{property.year_built}}</p>
-                            <p>Description: {{property.description}} </p>
+                            <h2>{{properties.property_type}}</h2>
+                            <span class="aa-price">${{properties.price}}</span>
+                            <p>City: {{properties.city}}</p>
+                            <p>Bedrooms: {{properties.bedrooms}}</p>
+                            <p>Bathrooms:{{properties.bathrooms}}</p>
+                            <p>Square Meters: {{properties.square_meters}}</p>
+                            <p>Year Built: {{properties.year_built}}</p>
+                            <p>Description: {{properties.description}} </p>
                         </div>
                        
                         <div class="aa-properties-social">
@@ -59,14 +59,14 @@
     </div>
     <div>
        
-            <div class="butrouterLinkns">
-                <a routerLink="/properties/{{property._id}}/edit" class="butrouterLinkn">Edit</a>
+            <!-- <div class="butrouterLinkns">
+                <a routerLink="/properties/{{properties.id}}/edit" class="butrouterLinkn">Edit</a>
                 <button class="butrouterLinkn">Delete</button>
             </div>
-        
+         -->
 
 
-        <div class="details-comments">
+        <!-- <div class="details-comments">
             <h2>Comments:</h2>
             <ul>
                
@@ -88,7 +88,8 @@
                     <input class="btn submit" type="submit" value="Add Comment"/>
                 </form>
             </div>
-        
+         -->
     </div>
 </section>
-</div>
+<app-footer></app-footer>
+

@@ -7,11 +7,13 @@ import { Property } from '../shared/models/Property';
 import { PropertyService } from '../services/property.service';
 import { Observable } from 'rxjs';
 import { ProperyListItemComponent } from '../propery-list-item/propery-list-item.component';
+import { PropertyDetailsComponent } from '../property-details/property-details.component';
 
 @Component({
   selector: 'app-properties',
   standalone: true,
-  imports: [RouterLink,MenuAreaComponent,ProperyListItemComponent,FooterComponent],
+  imports: [RouterLink,MenuAreaComponent,ProperyListItemComponent,PropertyDetailsComponent,
+    FooterComponent],
   templateUrl: './properties.component.html',
   styleUrl: './properties.component.css'
 })
