@@ -2246,9 +2246,9 @@ img {
 #aa-signin .aa-signin-area .aa-signin-form .aa-single-field label .required {
   color: #f60000;
 }
-#aa-signin .aa-signin-area .aa-signin-form .aa-single-field input[type="text"],
-#aa-signin .aa-signin-area .aa-signin-form .aa-single-field input[type="email"],
-#aa-signin .aa-signin-area .aa-signin-form .aa-single-field input[type="password"] {
+#aa-signin .aa-signin-area .aa-signin-form .aa-single-field text-input[type="text"],
+#aa-signin .aa-signin-area .aa-signin-form .aa-single-field text-input[type="email"],
+#aa-signin .aa-signin-area .aa-signin-form .aa-single-field text-input[type="password"] {
   border: none;
   color: #555;
   margin-bottom: 10px;
@@ -2261,7 +2261,7 @@ img {
   -o-transition: all 0.5s;
   transition: all 0.5s;
 }
-#aa-signin .aa-signin-area .aa-signin-form .aa-single-field label input [type="checkbox"] {
+#aa-signin .aa-signin-area .aa-signin-form .aa-single-field label text-input [type="checkbox"] {
   margin-left: 10px;
 }
 #aa-signin .aa-signin-area .aa-signin-form .aa-single-field textarea {
@@ -2284,7 +2284,7 @@ img {
   text-align: center;
   width: 100%;
 }
-#aa-signin .aa-signin-area .aa-signin-form .aa-single-submit input[type="submit"] {
+#aa-signin .aa-signin-area .aa-signin-form .aa-single-submit default-button[text="Login"] {
   color: #fff;
   font-size: 16px;
   font-weight: bold;

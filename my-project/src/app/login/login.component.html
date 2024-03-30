@@ -10,26 +10,27 @@
                         </div>
                         <form [formGroup]="loginForm" (ngSubmit)="submit()"   class="contactform">
                             <div class="aa-single-field">
-                                <label htmlFor="email">Email <span class="required">*</span></label>
+                              
                                 <text-input
-                                [control]="fc.email"
+                                [control]="fc['email']"
                                 [showErrorWhen]="isSubmited"
                                 type="email"
-                                label="Email">></text-input>
+                                label="Email"></text-input>
                                 
                             </div>
                             <div class="aa-single-field">
-                                <label htmlFor="password">Password <span class="required">*</span></label>
+                               
                                 <text-input
-                                [control]="fc.password"
+                                [control]="fc['password']"
                                 [showErrorWhen]="isSubmited"
                                 type="password"
                                 label="Password"
                                    ></text-input>
                                 
+                                   <default-button text="Login"></default-button>
                             </div>
                             <div class="aa-single-submit">
-                                <input type="submit" value="Login" class="aa-browse-btn" name="Submit" />
+                            
                                 <p>Don't Have A Account Yet? <a routerLink="/register" [queryParams]="{returnUrl: returnUrl}">CREATE NOW!</a></p>
                             </div>
                         </form>

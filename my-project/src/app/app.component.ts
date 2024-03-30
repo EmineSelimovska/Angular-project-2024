@@ -13,7 +13,13 @@ import { RegisterComponent } from './register/register.component';
 import { PropertyDetailsComponent } from './property-details/property-details.component';
 import { PromoBannerComponent } from './core/promo-banner/promo-banner.component';
 import { FirstHeaderComponent } from './first-header/first-header.component';
-import { ToastModule } from '@coreui/angular';
+import { FormModule, ToastModule } from '@coreui/angular';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { InputContainerComponent } from './input-container/input-container.component';
+import { InputValidationComponent } from './input-validation/input-validation.component';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DefaultButtonComponent } from './default-button/default-button.component';
 
 
 @Component({
@@ -32,8 +38,15 @@ import { ToastModule } from '@coreui/angular';
     LoginComponent,
     RegisterComponent,
     FooterComponent,
+    InputContainerComponent,
+    InputValidationComponent,
+    DefaultButtonComponent,
     HttpClientModule,
-    ToastModule
+    ToastModule,
+    FormsModule,
+    ReactiveFormsModule,
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
