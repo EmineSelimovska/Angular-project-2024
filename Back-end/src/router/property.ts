@@ -25,51 +25,51 @@ router.get("/",asyncHandler(
     }
 ));
 
-router.get("/search/:searchName", asyncHandler(
-    async (req, res) => {
-        const searchRegex = new RegExp(req.params.searchName, 'i');
-       const properties = await PropertyModel.find({name: {$regex:searchRegex}});
-        res.send(properties);
-    }
-));
+// router.get("/search/:searchName", asyncHandler(
+//     async (req, res) => {
+//         const searchRegex = new RegExp(req.params.searchName, 'i');
+//        const properties = await PropertyModel.find({name: {$regex:searchRegex}});
+//         res.send(properties);
+//     }
+// ));
 
-router.get("/tags", asyncHandler(
-   async (req, res) => {
-      const tags = await PropertyModel.aggregate([
-        {
-            $unwind: '$tags'
-        },
-        {
-            $group: {
-                _id: '$tags',
-                count: {$sum: 1}
-            }
-        },
-        {
-            $project:{
-                _id: 0,
-                name: '$_id',
-                count: '$count'
-            }
-        }
+// router.get("/tags", asyncHandler(
+//    async (req, res) => {
+//       const tags = await PropertyModel.aggregate([
+//         {
+//             $unwind: '$tags'
+//         },
+//         {
+//             $group: {
+//                 _id: '$tags',
+//                 count: {$sum: 1}
+//             }
+//         },
+//         {
+//             $project:{
+//                 _id: 0,
+//                 name: '$_id',
+//                 count: '$count'
+//             }
+//         }
       
-      ]).sort({count: -1});
-     const all = {
-        name: 'All',
-        count: await PropertyModel.countDocuments()
-     }
-      tags.unshift(all)
-      res.send(tags)
-    }
-));
+//       ]).sort({count: -1});
+//      const all = {
+//         name: 'All',
+//         count: await PropertyModel.countDocuments()
+//      }
+//       tags.unshift(all)
+//       res.send(tags)
+//     }
+// ));
 
-router.get("/tag/:tagName",asyncHandler(
-    async (req,res) => {
-        const foods = await PropertyModel.find({tags: req.params.tagName})
+// router.get("/tag/:tagName",asyncHandler(
+//     async (req,res) => {
+//         const foods = await PropertyModel.find({tags: req.params.tagName})
        
-       res.send(foods);
-    }
-));
+//        res.send(foods);
+//     }
+// ));
 
 router.get("/:propertyId", asyncHandler(
     async (req, res) => {
